@@ -1,0 +1,291 @@
+/*colors
+textcolor: #98989A
+
+color dark: #17181D
+
+color element background: #292C35
+
+color orange : #E09145
+
+color white-orange : #FCD9B8
+*/
+
+
+*{
+  font-family: mos;
+ # border:2px solid red;
+}
+html,body{
+  margin:0;
+  padding:0;
+height:100%;
+ 
+}
+
+.BASE1{
+  height:100%;
+  width:100%;
+  display:grid;
+  justify-items: center;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,175px);
+  column-gap: 2%;
+  grid-row-gap: 1%;
+  padding:2%;
+  transition: all 0.5s ease-in-out;
+}
+#.parts{
+  height:auto;
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+
+
+
+.BASE1 img{
+  height: 100%;
+ 
+  
+}
+.ii{
+  width:70%;
+  
+  display:block;
+  margin:0 auto;
+  outline:none;
+  border:none;
+  
+}
+h2{
+  width:100%;
+ text-align: center;
+ font-family: mos;
+ 
+}
+@font-face{
+  font-family: mos;
+  src: url(bold.ttf)
+}
+p{
+  width:100%;
+  text-align: center;
+  font-family: mos;
+}
+
+
+.gone{
+
+  opacity: 0;
+  display:none;
+  
+}
+.visible{
+  height:100%;
+  opacity: 1;
+
+  
+}
+.visiblebtn{
+  height:auto;
+  opacity: 1;
+}
+input[type="submit"]{
+  background: black;
+  color:white;
+  width:100%;
+  margin-top:3%;
+  padding:2%
+}
+.BASE2{
+  overflow: auto;
+  height: 100%;
+}
+
+label{
+  text-align: right;
+  width: 98%;
+  font-size: 0.80rem;
+  
+}
+h5{
+  width :100% ;
+  text-align: left;
+  font-size: 1rem;
+  
+  
+}
+button[onclick="visible()"]{
+  
+  padding:1%;
+ 
+  
+}
+
+
+.tosmall{
+  height: 280px;
+  width: 200px;
+}
+@media (min-width:768px){
+  
+  .BASE1{
+   
+  grid-template-rows: repeat(3,340px);
+  }
+  .BASE1 img{
+    width:100%;
+    height:100%;
+  }
+}
+.BASE0{
+  height: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nn{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background: black;
+cursor: pointer;
+  height:auto;
+  transition: all 0.5s ease-in;
+}
+.nn:hover,.nn:focus{
+  transform: scale(1.1);
+}
+.close{
+  font-weight: bolder;
+  text-align: right;
+  padding-right: 4%;
+  font-size: 2rem;
+}
+.drawer-n ul a li{
+  list-style-type: none;
+  width:100%;
+  text-align: center;
+  padding:4%;
+  background: rgb(230, 230, 230);
+  border-radius: 4%;
+  margin-top: 4%;
+  transition: background 0.5s ease-in-out;
+  font-size: 1.50rem;
+} 
+.drawer-n{
+  height: 100%;
+  
+  
+}
+.drawer{
+  background: none;
+}
+.drawer-n ul a{
+  text-decoration: none;
+  color:black;
+  cursor: pointer;
+}
+.drawer-n ul a li:hover{
+ background: grey;
+}
+.con div{
+  
+  letter-spacing: 5px;
+  border-width: 0px 1px 0px 0px ;
+  border-style: solid;
+  border-color: #e8e8e8;
+  
+ 
+}
+.con div:nth-child(4){
+  border:none;
+}
+.con{
+  border-radius: 8px;
+  position: relative;
+}
+.con:after{
+ 
+  content:"";
+  background-image: url("copy.png");
+  position: absolute;
+ top:0;
+  height:15px;
+  width:15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 0;
+  border-width: 0px 0px 1px 1px;
+  border-color: #e8e8e8;
+  border-style: solid;
+  border-radius: 3px;
+  
+}
+.prog{
+  background: transparent;
+  width:50px ;
+  height:50px;
+  border-radius: 50%;
+  border-width:2px 0px 2px 0px;
+  border-color: blue;
+  border-style: solid;
+}
+
+  .background{
+       
+       width:100%;
+      
+      
+      display:flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      
+       
+     }
+ .background span{
+       width:40px;
+       height:40px;
+       background: transparent;
+       border-width: 4px 4px 4px 4px;
+       border-color: black transparent;
+       border-style: solid;
+       border-radius: 50%;
+     animation: boutab 0.5s linear infinite;
+     }
+     @keyframes boutab{
+       from{
+         transform: rotate(180deg);
+         border-color: black transparent;
+       }
+       to{
+         transform:rotate(-180deg);
+         border-color: black transparent;
+}
+     }
+     
+     .wrn{
+       background: lightyellow;
+       font-size: 0.80rem;
+       border-radius: 8px;
+       border-width: 0px 0px 0px 10px;
+       border-style: solid;
+       border-color: yellow;
+     }
+     #captcha{
+      
+     height: 0px;
+   width: 70%;
+   
+    
+       
+    display:block;
+       margin: 0 auto;
+       margin-bottom: 4px;
+     
+     
+    .baseall{
+      height:auto;
+    }

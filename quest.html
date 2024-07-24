@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>your questions</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+    @font-face{
+     font-family: mos; 
+      src: url(mos.ttf);
+      
+    }
+    body,html{
+      margin:0;
+      padding:0;
+      height :100%;
+    }
+    div:nth-of-type(1){
+      font-weight: 500;
+      font-size: 1.20rem;
+    }
+    
+    .base{
+      display:block;
+      height:100%;
+      width:100%;
+    }
+    
+    .base div{
+      background: #FAFAFA;
+      display: flex;
+      padding: 4% 6% 4% 4%;
+     
+      flex-wrap:wrap;
+      align-items: center;
+      width:100%;
+     cursor: pointer;
+      
+    }
+    .base div:hover,.base div:focus{
+      background: none;
+    }
+    .base div h4{
+      font-size: 1.10rem;
+      font-family: mos;
+      flex:1;
+      
+    }
+    *{
+      #border: 1px solid red
+    }
+    .gone{
+      display:none;
+    }
+    
+  </style>
+</head>
+
+<body>
+<div class="w-100 p-3 text-dark shadow-sm" >Frequently asked questions</div>
+
+<div class="base p-1">
+  
+  
+  <div class="w-100 shadow-sm" id="1" onclick="showq(this.id)">
+  
+  
+  <h4  class="" id="text1"><small>How can I get one of your gift cards?</small></h4>
+  
+  
+  <svg id="svg1" class="d-b m-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+  </div>
+  <!-----item2------->
+    <div class="w-100 shadow-sm mt-2" onclick="showq(this.id)" id="2">
+  
+  
+  <h4 class="" id="text2"><small>What is the content of your website?</small></h4>
+  
+  
+  <svg id="svg2" class="d-b m-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+  </div>
+  
+  
+  
+    <!-----item3------->
+    <div class="w-100 shadow-sm mt-2" onclick="showq(this.id)" id="3">
+  
+  
+  <h4 class="" id="text3"><small>Are you trustworthy enough?</small></h4>
+  
+  
+  <svg id="svg3" class="d-b m-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+  </div>
+  
+  
+    <!-----item4------->
+    <div class="w-100 shadow-sm mt-2" onclick="showq(this.id)" id="4">
+  
+  
+  <h4 class="" id="text4"><small>How can I participate in all of your competitions?</small></h4>
+  
+  
+  <svg id="svg4" class="d-b m-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+  </div>
+  
+    <!-----item5------->
+    <div class="w-100 shadow-sm mt-2" onclick="showq(this.id)" id="5">
+  
+  
+  <h4 class="" id="text5"><small>How can I avoid making mistakes during registration with you?</small></h4>
+  
+  
+  <svg id="svg5"  class="d-b m-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+  </div>
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+
+<script>
+
+
+  function showq(id){
+    var
+    txt = document.getElementById('text'+id),
+    svg = document.getElementById('svg'+id);
+  
+  
+    if(txt.id == 'text1'){
+      
+      txt.classList.add('text-muted');
+      txt.innerHTML= 'You can get them only by clicking on the card you want and registering in it to become eligible, make sure you answer all the questions that will appear for you.';
+      svg.classList.add('gone');
+      
+      
+    }
+    
+    else if(txt.id=='text2'){
+      
+      txt.classList.add('text-muted');
+      txt.innerHTML= 'Our website holds a raffle for various gift cards as you can see, and people are randomly selected every month to win each card they register in.';
+      svg.classList.add('gone');
+      
+    }
+    
+    else if(txt.id == 'text3'){
+      
+      txt.classList.add('text-muted');
+      txt.innerHTML= "Yes, you can make sure of that by participating in this month's raffle and registering.";
+      svg.classList.add('gone');
+      
+    }
+    
+    else if(txt.id == 'text4'){
+      
+      txt.classList.add('text-muted');
+      txt.innerHTML= "That's easy, just click on the gift card you want and for all those questions, don't leave any blank space, you must answer them all.";
+      svg.classList.add('gone');
+      
+    }
+    
+    else if(txt.id == 'text5'){
+      
+     txt.classList.add('text-muted');
+      txt.innerHTML= 'If you want to get gift cards without errors, you must register with your real and correct information. In addition, you must complete the captcha questions.';
+      svg.classList.add('gone');
+      
+    }
+    
+    
+    
+    
+  }
+  
+  
+  
+  
+  
+  
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
