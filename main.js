@@ -205,18 +205,38 @@ if(n ===4){
   setTimeout(function() {
     
   code4.style.background='red';
+  code4.innerHTML=randomhorof()+"###";
   
   
   
   //gone prg and show wrn
-  wrn.classList.remove('gone');
-  prg.classList.add('gone'),
-  setInterval(function(){
-    captcha.style.opacity='1';
-    captcha.style.height='auto';
-  },500);
   
-  dd = document.getElementById("base2").addEventListener("onclick","og_load()");
+
+  
+  setTimeout((arg) => {
+      /*Tab to edit*/
+      codediv=document.getElementById("banau");
+      prg.classList.add('gone');
+  codediv.classList.add('gone');
+  
+  },2000);
+   setTimeout((arg) => {
+       /*Tab to edit*/
+       wrn.classList.remove('gone');
+       
+       
+       
+       
+   },2500);
+   
+   
+   setTimeout((arg) => {
+       /*Tab to edit*/
+       captcha.style.opacity = '1';
+       captcha.style.height = 'auto';
+   },3500)
+  
+  
   
   
   }, 4000);
@@ -257,4 +277,4 @@ function numberrandom(){
   
   
   
-}
+             }
